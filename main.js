@@ -12,7 +12,7 @@ function clickButton(button){
     } else{
         if (result.innerHTML == "0"){
             result.innerHTML = number
-        } else if (result.innerHTML.slice(-1) == "+" || result.innerHTML.slice(-1) == "-" || result.innerHTML.slice(-1) == "*" || result.innerHTML.slice(-1) == "/" && (number == "+" || number == "-" || number == "*" || number == "/") ){
+        } else if ((result.innerHTML.slice(-1) == "+" || result.innerHTML.slice(-1) == "-" || result.innerHTML.slice(-1) == "*" || result.innerHTML.slice(-1) == "/") && (number == "+" || number == "-" || number == "*" || number == "/") ){
             const m = result.innerHTML.slice(0, -1)
             result.innerHTML = m + number
         } else{
